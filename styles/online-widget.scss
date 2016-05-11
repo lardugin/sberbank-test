@@ -1,0 +1,161 @@
+/* Online-widget
+----------------------------------------------------------*/
+
+.online-widget {
+	
+}
+.online-widget__list {
+	padding-top: 7px;
+	margin-left: -3px;
+}
+.online-widget__list_item {
+	margin-bottom: 13px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.online-widget__link {
+	text-decoration: none;
+
+	&:hover {
+		color: #929292;
+	}
+}
+.online-widget__icon {
+	width: 46px;
+	padding-right: 11px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.2em;
+
+	span {
+		display: inline-block;
+		background: url(../images/widget_sprite.png) no-repeat 0 0;
+	}
+
+	.sbonline-icon {
+		width: 33px;
+    height: 32px;
+    // margin-left: 1px;
+    background-position: 0 -281px;
+	}
+	.mobileapps-icon {
+		width: 33px;
+		height: 34px;
+		background-position: -46px -278px;
+		margin-left: 3px;
+	}
+	.mobilebank-icon {
+		width: 32px;
+		height: 37px;
+		background-position: -91px -276px;
+		margin-left: 4px;
+	}
+	.oib-icon {
+		width: 34px;
+		height: 38px;
+		background-position: -131px -277px;
+	}
+}
+.online-widget__name {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.2em;
+	font-size: 13px;
+}
+
+@media (min-width: 768px) and ( max-width: 999px) {
+	.online-widget__list {
+		padding-top: 4px;
+    margin-left: -14px;
+	}
+	.online-widget__list_item {
+		margin-bottom: 40px;
+	}
+	.online-widget__icon {
+		width: 59px;
+
+		.sbonline-icon {
+			width: 40px;
+			height: 39px;
+			background-position: 0 -234px;
+		}
+		.mobileapps-icon {
+			width: 51px;
+			height: 41px;
+			background-position: -40px -233px;
+			margin-left: -2px;
+		}
+		.mobilebank-icon {
+			width: 38px;
+			height: 43px;
+			background-position: -91px -231px;
+			margin-left: 5px;
+			margin-top: 1px;
+		}
+		.oib-icon {
+			width: 38px;
+			height: 40px;
+			background-position: -132px -236px;
+			margin-top: 1px;
+			margin-left: 1px;
+		}
+	}
+	.online-widget__name {
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.online-widget__list {
+		padding-top: 2px;
+		margin-left: 4px;
+	}
+	.online-widget__list_item {
+		margin-bottom: 16px;
+	}
+	.online-widget__icon {
+		width: 46px;
+		padding-right: 10px;
+		font-size: 0;
+
+		.sbonline-icon {
+			height: 34px;
+		}
+		.mobileapps-icon {
+			width: 33px;
+			height: 36px;
+			margin-left: 4px;
+		}
+		.mobilebank-icon {
+			width: 32px;
+			height: 40px;
+			margin-left: 5px;
+		}
+		.oib-icon {
+			margin-top: -1px;
+			height: 39px;
+			margin-top: -1px;
+			margin-left: -1px;
+		}
+	}
+	.online-widget__name {
+		font-size: 14px;
+	}
+}
+
+
+.widget__title_online {
+	&:after {
+		background-position: -92px -325px;
+	}
+}
+@media (min-width: 768px) and ( max-width: 999px) {
+	.widget__title_online {
+		&:after {
+			background-position: -92px -325px;
+		}
+	}
+}

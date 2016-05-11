@@ -1,0 +1,98 @@
+/* Selectbox
+----------------------------------------------------------*/
+
+.selectbox {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+ .select {
+    padding: 0 22px 0 10px;
+    height: 36px;
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    @include box-sizing(border-box);
+
+    &:hover {
+      .text {
+        color: #929292;
+      }
+    }
+  }
+}
+
+.active-selectbox .select {
+  background: rgba(0, 0, 0, 0.9);
+  border-width: 1px 1px 0 1px;
+}
+
+.selectbox .select .text {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 17px;
+  color: #000;
+  padding-top: 5px;
+}
+
+.selectbox .trigger {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 30px;
+  height: 100%;
+}
+
+.selectbox .trigger .arrow {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 11px;
+  height: 7px;
+  background: url(../images/sprite.png) no-repeat;
+  background-position: -50px -120px;
+}
+.selectbox .dropdown {
+  top: 29px;
+  width: 100%;
+  margin: 0;
+  font-size: 17px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 0 0 4px 4px;
+}
+
+.selectbox .dropdown ul {
+  list-style: none;
+  margin-right: 0 !important;
+  margin-bottom:  0 !important;
+  width: 100%;
+}
+
+// @-moz-document url-prefix() {
+//   .selectbox .dropdown { top: 28px !important}
+// }
+
+.selectbox li {
+  line-height: 22px;
+  padding: 3px 11px 4px;
+  margin-bottom:  0 !important;
+  border-bottom: 1px solid #e8e8e8;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  &.selected,
+  &:hover {
+    background: #f4f4f4;
+    color: #929292;
+  }
+  &.disabled:hover {
+    background: none;
+  }
+}

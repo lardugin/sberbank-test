@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание - Лардугин Михаил</title>
+	<link rel="stylesheet" href="build/css/base.css">
+	<script src="build/js/jquery-1.9.1.min.js"></script>
+	<script src="build/js/common.js"></script>
+	<!--[if IE 8]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="container">
+	<div class="list-wrapper">
+		<div class="widgets-list row">
+			<div id="sortable">
+				<div class="col-xs-12 col-sm-6 col-md-3 widgets-list__item">
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="flipper__area flipper__area_front">
+								<div class="widget">
+									<div class="widget__headline">
+										<div class="widget__title widget__title_currency">Конвертер валют</div>
+										<div class="widget__settings-list">
+											<a href="javascript:;" class="widget__settings_icon widget__icon_catalog"><i class="widget-icon">*</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_remove"><i class="widget-icon">x</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_minimize"><i class="widget-icon">^</i></a>
+										</div>
+										<div class="widget__settings-toggle">
+											<i class="widget-icon"></i>
+										</div>
+									</div>
+									<div class="widget__body">
+										<div class="widget__body_item currency-widget">
+											<div class="currency-widget__date">
+												<span class="currency-widget__date_value">11 мая 2016</span>
+											</div>
+											<div class="currency-form">
+												<form action="">
+													<div class="currency-form__row">
+														<label class="currency-form__label">Поменять</label>
+														<div class="currency-group">
+															<div class="currency-group__select">
+																<select class="fake-select">
+																	<option value="RUB">RUB</option>
+																	<option value="USD">USD</option>
+																	<option value="EUR">EUR</option>
+																</select>
+															</div>
+															<div class="currency-group__input">
+																<input type="text">
+															</div>
+														</div>
+													</div>
+													<div class="currency-form__row">
+														<label class="currency-form__label">На</label>
+														<div class="currency-group">
+															<div class="currency-group__select">
+																<select class="fake-select">
+																	<option value="EUR">EUR</option>
+																	<option value="RUB">RUB</option>
+																	<option value="USD">USD</option>
+																</select>
+															</div>
+															<div class="currency-group__input">
+																<input type="text">
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="currency-widget__result">
+												<span class="currency-widget__result_value">1 RUB = 0.0127 EUR</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flipper__area flipper__area_back widget">
+								<div class="widget__headline_flipper">
+									<div class="widget__title_flipper">Выберите виджет</div>
+									<div class="widget__settings-toggle widget__settings-toggle_close-flipp">
+										<i class="widget-icon"></i>
+									</div>
+								</div>
+								<div class="widget__body">
+									<div class="widget__body_item flipper-body">
+										<div class="widget-name__list">
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Конвертер валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Наши новости</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Погода</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Курсы валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Кредитные карты</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Поиск отделений</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Онлайн услуги</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 widgets-list__item">
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="flipper__area flipper__area_front">
+								<div class="widget">
+									<div class="widget__headline">
+										<div class="widget__title widget__title_online">Онлайн услуги</div>
+										<div class="widget__settings-list">
+											<a href="javascript:;" class="widget__settings_icon widget__icon_catalog"><i class="widget-icon">*</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_remove"><i class="widget-icon">x</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_minimize"><i class="widget-icon">^</i></a>
+										</div>
+										<div class="widget__settings-toggle">
+											<i class="widget-icon"></i>
+										</div>
+									</div>
+									<div class="widget__body">
+										<div class="widget__body_item online-widget">
+											<div class="online-widget__list">
+												<div class="online-widget__list_item">
+													<a href="javascript:;" class="online-widget__link">
+														<div class="online-widget__icon"><span class="sbonline-icon"></span></div>
+														<div class="online-widget__name">Сбербанк Онлайн</div>
+													</a>
+												</div>
+												<div class="online-widget__list_item">
+													<a href="javascript:;" class="online-widget__link">
+														<div class="online-widget__icon"><span class="mobileapps-icon"></span></div>
+														<div class="online-widget__name">Мобильные приложения</div>
+													</a>
+												</div>
+												<div class="online-widget__list_item">
+													<a href="javascript:;" class="online-widget__link">
+														<div class="online-widget__icon"><span class="mobilebank-icon"></span></div>
+														<div class="online-widget__name">Мобильный банк</div>
+													</a>
+												</div>
+												<div class="online-widget__list_item">
+													<a href="javascript:;" class="online-widget__link">
+														<div class="online-widget__icon"><span class="oib-icon"></span></div>
+														<div class="online-widget__name">Банкоматы и терминалы</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flipper__area flipper__area_back widget">
+								<div class="widget__headline_flipper">
+									<div class="widget__title_flipper">Выберите виджет</div>
+									<div class="widget__settings-toggle widget__settings-toggle_close-flipp">
+										<i class="widget-icon"></i>
+									</div>
+								</div>
+								<div class="widget__body">
+									<div class="widget__body_item flipper-body">
+										<div class="widget-name__list">
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Конвертер валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Наши новости</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Погода</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Курсы валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Кредитные карты</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Поиск отделений</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Онлайн услуги</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 widgets-list__item">
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="flipper__area flipper__area_front">
+								<div class="widget">
+									<div class="widget__headline">
+										<div class="widget__title widget__title_office-search">Поиск отделений</div>
+										<div class="widget__settings-list">
+											<a href="javascript:;" class="widget__settings_icon widget__icon_catalog"><i class="widget-icon">*</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_remove"><i class="widget-icon">x</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_minimize"><i class="widget-icon">^</i></a>
+										</div>
+										<div class="widget__settings-toggle">
+											<i class="widget-icon"></i>
+										</div>
+									</div>
+									<div class="widget__body">
+										<div class="widget__body_item office-search-widget">
+											<div class="office-search-form">
+												<form action="">
+													<div class="form-group office-search__input">
+														<label for="address" class="form__label">Название улицы или метро</label>
+														<input type="text" class="form__input_text" id="address">
+													</div>
+													<div class="form-group office-search__checkbox">
+														<label for="branch" class="form__input_checkbox">
+															<input type="checkbox" id="branch">
+															<span class="input__checkbox_title">Отделения</span>
+														</label>
+														<label for="itt" class="form__input_checkbox">
+															<input type="checkbox" id="itt">
+															<span class="input__checkbox_title">Терминалы</span>
+														</label>
+														<label for="atm" class="form__input_checkbox">
+															<input type="checkbox" id="atm">
+															<span class="input__checkbox_title">Банкоматы</span>
+														</label>
+														<label for="noc" class="form__input_checkbox">
+															<input type="checkbox" id="noc">
+															<span class="input__checkbox_title">Работает 24</span>
+														</label>
+													</div>
+													<div class="form-group ">
+														<button type="submit" class="sbf_button_green">Показать на карте</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flipper__area flipper__area_back widget">
+								<div class="widget__headline_flipper">
+									<div class="widget__title_flipper">Выберите виджет</div>
+									<div class="widget__settings-toggle widget__settings-toggle_close-flipp">
+										<i class="widget-icon"></i>
+									</div>
+								</div>
+								<div class="widget__body">
+									<div class="widget__body_item flipper-body">
+										<div class="widget-name__list">
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Конвертер валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Наши новости</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Погода</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Курсы валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Кредитные карты</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Поиск отделений</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Онлайн услуги</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 widgets-list__item">
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="flipper__area flipper__area_front">
+								<div class="widget">
+									<div class="widget__headline">
+										<div class="widget__title widget__title_rates">Курсы валют</div>
+										<div class="widget__settings-list">
+											<a href="javascript:;" class="widget__settings_icon widget__icon_catalog"><i class="widget-icon">*</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_remove"><i class="widget-icon">x</i></a>
+											<a href="javascript:;" class="widget__settings_icon widget__icon_minimize"><i class="widget-icon">^</i></a>
+										</div>
+										<div class="widget__settings-toggle">
+											<i class="widget-icon"></i>
+										</div>
+									</div>
+									<div class="widget__body">
+										<div class="widget__body_item rates-widget">
+											<div class="rates-widget__tabs">
+												<a href="javascript:;" class="rates-widget__tabs_item active"><span>Валюты</span></a>
+												<a href="javascript:;" class="rates-widget__tabs_item"><span>Металлы</span></a>
+											</div>
+											<div class="rates-widget__cont">
+												<div class="rates-widget__cont_item active">
+													<table class="rates-widget__table">
+														<thead>
+															<tr>
+																<td>11.05.2016</td>
+																<td><span class="square-green">Покупка</span></td>
+																<td><span class="square-orange">Продажа</span></td>
+															</tr>
+														</thead>
+														<tbody class="rates-widget__table_tbody">
+															<tr class="active">
+																<td><a href="javascript:;">Евро</a></td>
+																<td>72.71</td>
+																<td>79.00</td>
+															</tr>
+															<tr class="">
+																<td><a href="javascript:;">Доллар США</a></td>
+																<td>63.39</td>
+																<td>69.51</td>
+															</tr>
+														</tbody>
+													</table>
+													<div class="graph-container__list">
+														<div class="graph-container active">
+															<svg height="100" version="1.1" width="196" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.96875px;" viewBox="0 0 196 100" preserveAspectRatio="xMidYMid meet"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#33cc33" d="M0,73.25L28,73.25L56,95.62500000000007L84,91.12500000000009L112,91.12500000000009L140,91.12500000000009L168,85.24999999999991L196,85.24999999999991" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><path fill="none" stroke="#ffcc00" d="M0,5.250000000000028L28,5.250000000000028L56,27.624999999999915L84,12.5L112,12.5L140,12.5L168,17.249999999999943L196,17.249999999999943" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><rect x="0" y="0" width="196" height="100" rx="0" ry="0" fill="#ffffff" stroke="#000" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0; cursor: pointer;"></rect></svg>
+														</div>
+														<div class="graph-container">
+															<svg height="100" version="1.1" width="196" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.96875px;" viewBox="0 0 196 100" preserveAspectRatio="xMidYMid meet"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#33cc33" d="M0,85.4411764705883L28,85.4411764705883L56,100.58823529411774L84,97.2058823529412L112,97.2058823529412L140,97.2058823529412L168,86.02941176470583L196,86.02941176470583" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><path fill="none" stroke="#ffcc00" d="M0,10.441176470588147L28,10.441176470588147L56,25.58823529411758L84,7.205882352941103L112,7.205882352941103L140,7.205882352941103L168,11.029411764705884L196,11.029411764705884" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><rect x="0" y="0" width="196" height="100" rx="0" ry="0" fill="#ffffff" stroke="#000" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0; cursor: pointer;"></rect></svg>
+														</div>
+													</div>
+												</div>
+												<div class="rates-widget__cont_item">
+													<table class="rates-widget__table">
+														<thead>
+															<tr>
+																<td>11.05.2016</td>
+																<td><span class="square-green">Покупка</span></td>
+																<td><span class="square-orange">Продажа</span></td>
+															</tr>
+														</thead>
+														<tbody class="rates-widget__table_tbody">
+															<tr class="active">
+																<td><a href="javascript:;">Серебро</a></td>
+																<td>2446.00</td>
+																<td>2824.00</td>
+															</tr>
+															<tr class="">
+																<td><a href="javascript:;">Доллар США</a></td>
+																<td>33.90</td>
+																<td>39.20</td>
+															</tr>
+														</tbody>
+													</table>
+													<div class="graph-container__list">
+														<div class="graph-container active">
+															<svg height="100" version="1.1" width="196" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.96875px;" viewBox="0 0 196 100" preserveAspectRatio="xMidYMid meet"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#33cc33" d="M0,100.97560975609755L32.666666666666664,100.97560975609755L65.33333333333333,100.97560975609755L98,100.97560975609755L130.66666666666666,100.97560975609755L163.33333333333331,92.92682926829268L196,92.92682926829268" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><path fill="none" stroke="#ffcc00" d="M0,8.78048780487805L32.666666666666664,8.78048780487805L65.33333333333333,8.78048780487805L98,8.78048780487805L130.66666666666666,8.78048780487805L163.33333333333331,-0.7317073170731732L196,-0.7317073170731732" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><rect x="0" y="0" width="196" height="100" rx="0" ry="0" fill="#ffffff" stroke="#000" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0; cursor: pointer;"></rect></svg>
+														</div>
+														<div class="graph-container">
+															<svg height="100" version="1.1" width="196" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.96875px;" viewBox="0 0 196 100" preserveAspectRatio="xMidYMid meet"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#33cc33" d="M0,92.9824561403509L32.666666666666664,92.9824561403509L65.33333333333333,92.9824561403509L98,92.9824561403509L130.66666666666666,92.9824561403509L163.33333333333331,100L196,100" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><path fill="none" stroke="#ffcc00" d="M0,0L32.666666666666664,0L65.33333333333333,0L98,0L130.66666666666666,0L163.33333333333331,8.771929824561397L196,8.771929824561397" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="-2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; stroke-linecap: round;"></path><rect x="0" y="0" width="196" height="100" rx="0" ry="0" fill="#ffffff" stroke="#000" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0; cursor: pointer;"></rect></svg>
+														</div>
+													</div>
+												</div>
+												<div class="rates-widget__date">
+													<div class="rates-widget__date_item">04.05.2016</div>
+													<div class="rates-widget__date_item">11.05.2016</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flipper__area flipper__area_back widget">
+								<div class="widget__headline_flipper">
+									<div class="widget__title_flipper">Выберите виджет</div>
+									<div class="widget__settings-toggle widget__settings-toggle_close-flipp">
+										<i class="widget-icon"></i>
+									</div>
+								</div>
+								<div class="widget__body">
+									<div class="widget__body_item flipper-body">
+										<div class="widget-name__list">
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Конвертер валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Наши новости</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Погода</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Курсы валют</a></div>
+											<div class="widget-name__item selectable"><a href="javascript:;" class="widget-name__item_link">Кредитные карты</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Поиск отделений</a></div>
+											<div class="widget-name__item"><a href="javascript:;" class="widget-name__item_link">Онлайн услуги</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

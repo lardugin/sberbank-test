@@ -1,0 +1,74 @@
+/* Reduction
+----------------------------------------------------------*/
+
+@mixin transform ($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
+@mixin transition ($transition) {	
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	transition: $transition;
+}
+
+@mixin box-shadow ($box-shadow) {
+	-webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+	-ms-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
+}
+
+@mixin box-sizing ($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
+@mixin border-radius ($border-radius) {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+@mixin user-select ($user-select) {
+  -webkit-user-select: $user-select;
+  -moz-user-select: $user-select;
+  -ms-user-select: $user-select;
+  user-select: $user-select;
+}
+
+@mixin grad ($color-1, $color-2) {
+  background: $color-1; /* Old browsers */
+  background: -moz-linear-gradient(top,  $color-1 0%, $color-2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  $color-1 0%,$color-2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  $color-1 0%,$color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin grad_gorizont ($color-1, $color-2) {
+  background: $color-1; /* Old browsers */
+  background: -moz-linear-gradient(left,  $color-1 0%, $color-2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  $color-1 0%,$color-2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  $color-1 0%,$color-2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=1 ); /* IE6-9 */
+}
+
+.clearfix { 
+  &:after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+}
+
+.box-sizing {
+  @include box-sizing(border-box);
+}
+

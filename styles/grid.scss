@@ -1,0 +1,53 @@
+/* Grid
+----------------------------------------------------------*/
+
+.container {
+	max-width: 1060px;
+	background: #fafafa;
+	min-height: 100%;
+	height: auto !important;
+	position: relative;
+	@include box-shadow(0 0 35px rgba(0, 0, 0, 0.06));
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.list-wrapper {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 1000px) {
+	.container {
+		min-width: 980px;
+		max-width: 1060px;
+		width: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+	  width: auto;
+	}
+}
+
+@media (max-width: 999px) {
+	.list-wrapper {
+	  width: auto;
+	}
+	.col-sm-6 {
+	  width: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-xs-12 {
+	  width: 100%;
+	}
+}

@@ -1,0 +1,217 @@
+/* Currency-widget
+----------------------------------------------------------*/
+
+.currency-widget {
+
+}
+.currency-widget__date {
+	margin-bottom: 16px;
+}
+.currency-widget__date_value {
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	border-bottom: 1px dashed #7f7f7f;
+}
+
+.currency-form {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 17px;
+	padding-bottom: 16px;
+}
+.currency-form__row {
+	margin-bottom: 10px;
+}
+.currency-form__label {
+	font-size: 14px;
+	margin-bottom: 3px;
+	display: block;
+}
+
+.currency-group {
+	@extend .clearfix;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	height: 31px;
+}
+.currency-group__select {
+	float: left;
+	width: 40%;
+	position: relative;
+  height: 100%;
+  .selectbox {
+  	.select {
+  		border-radius: 3px 0 0 3px;
+  	}
+  	.dropdown {
+			width: 186px;
+  	}
+  }
+}
+.currency-group__input {
+	float: left;
+	width: 60%;
+	position: relative;
+  height: 100%;
+
+	input {
+		border: none;
+		position: absolute;
+  	height: 100%;
+		width: 100%;
+		background: transparent;
+		border-left: 1px solid #b3b3b3;
+		padding: 6px 10px 5px;
+		font-size: 17px;
+		@include box-shadow (none);
+	}
+}
+
+.currency-widget__result {
+	line-height: 24px;
+}
+
+.currency-widget__result_value {
+	font-size: 16px;
+	color: #000;
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+	.currency-widget__date {
+		padding-top: 4px;
+		margin-bottom: 35px;
+	}
+	.currency-widget__date_value {
+		font-size: 18px;
+	}
+	
+	.currency-form {
+		padding-bottom: 22px;
+		margin-bottom: 32px;
+	}
+	.currency-form__row {
+		margin-bottom: 21px;
+	}
+	.currency-form__label {
+		font-size: 18px;
+		margin-bottom: 9px;
+	}
+	.currency-group {
+		height: 48px;
+	}
+	.currency-group__input {
+		input {
+			color: #4c4c4c;
+			font-size: 25px;
+			padding: 6px 15px 5px;
+		}
+	}
+
+	.currency-widget__result_value {
+		font-size: 24px;
+	}
+
+	.selectbox .select {
+		padding: 0 22px 0 15px;
+		.text {
+			font-size: 25px;
+			padding-top: 13px;
+			color: #4c4c4c;
+		}
+	}
+	.selectbox .trigger {
+		width: 45px;
+		.arrow {
+			width: 17px;
+			height: 10px;
+			right: 16px;
+			top: 20px;
+			background-position: -20px -120px;
+		}
+	}
+	.currency-group__select .selectbox {
+		.dropdown {
+			top: 46px;
+			width: 292px;
+		}
+
+		li {
+			font-size: 25px;
+			padding: 8px 12px 8px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.currency-widget__date {
+		margin-bottom: 26px;
+	}
+	.currency-form {
+		padding-bottom: 11px;
+	}
+	.currency-form__label {
+		font-size: 13px;
+		margin-bottom: 1px;
+	}
+	.currency-form__row {
+		margin-bottom: 15px;
+	}
+	.currency-group {
+		height: 23px;
+		width: 130px;
+	}
+	.currency-group__input { 
+		input {
+			font-size: 13px;
+			color: #4c4c4c;
+			padding: 3px 7px;
+		}
+	}
+
+	.selectbox .select {
+		padding: 0 10px 0 6px;
+		.text {
+			font-size: 13px;
+			padding-top: 1px;
+			color: #000;
+		}
+	}
+	.selectbox .trigger {
+		width: 19px;
+		.arrow {
+			right: 7px;
+			top: 10px;
+			width: 7px;
+			height: 4px;
+			background-position: 0 -120px;
+		}
+	}
+	.currency-group__select .selectbox {
+		.dropdown {
+			top: 21px;
+			width: 128px;
+		}
+
+		li {
+			font-size: 25px;
+			color: #000;
+			font-size: 13px;
+			padding: 1px 11px 1px;
+		}
+	}
+}
+
+
+
+.widget__title_currency {
+	&:after {
+		background-position: -60px 0;
+	}
+}
+@media (min-width: 768px) and ( max-width: 999px) {
+	.widget__title_currency {
+		&:after {
+			background-position: -92px -109px;
+		}
+	}
+}
