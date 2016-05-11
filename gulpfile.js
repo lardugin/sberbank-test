@@ -4,11 +4,7 @@ var gulp = require('gulp'),
     minify_css = require('gulp-minify-css'),
 		sass = require('gulp-sass'); 
 
-gulp.task('default', function(){
-  console.log('Hello from Gulp!')
-});
-
-gulp.task('gulp-uglify', function(){
+gulp.task('scripts', function(){
   gulp.src('scripts/*.js')
   .pipe(uglify())
   .pipe(concat('common.js'))
@@ -18,7 +14,9 @@ gulp.task('gulp-uglify', function(){
 
 gulp.task('sass', function () {
   return gulp.src('styles/base.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      errLogToConsole: true,
+    }))
     .pipe(minify_css())
     .pipe(gulp.dest('build/css/'));
 });
